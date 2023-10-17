@@ -8,7 +8,6 @@
 }
 
 h1 {
-  text-align: center;
   text-size-adjust: 40px;
   vertical-align: bottom;
   letter-spacing: 2px;
@@ -17,6 +16,9 @@ h1 {
   text-shadow: -4px 4px #ff6666, -8px 8px #ffd966, -12px 12px #66ffb3,
     -16px 16px #668cff, -20px 20px #ff66d9;
   font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
