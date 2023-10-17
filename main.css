@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  text-align: center;
+  text-size-adjust: 40px;
+  vertical-align: bottom;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: -4px 4px #ff6666, -8px 8px #ffd966, -12px 12px #66ffb3,
+    -16px 16px #668cff, -20px 20px #ff66d9;
+  font-size: 60px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(
+    to right,
+    #ff6666,
+    #ff8c66,
+    #ffb366,
+    #ffd966,
+    #ffff66,
+    #d9ff66,
+    #b3ff66,
+    #8cff66,
+    #66ff66,
+    #66ff8c,
+    #66ffb3,
+    #66ffd9,
+    #66ffff,
+    #66d9ff,
+    #66b3ff,
+    #668cff,
+    #6666ff,
+    #8c66ff,
+    #b366ff,
+    #cc66ff,
+    #d966ff,
+    #ff66ff,
+    #ff66d9,
+    #ff66b3,
+    #ff668c,
+    #ff6666
+  );
+}
+
+.calculator-grid-container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid-container > button {
+  cursor: pointer;
+  font-size: 2.5rem;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  background-color: #ecf0f3;
+  box-shadow: inset 6px 6px 13px #668cff, 6px 6px 13px rgba(0, 0, 0, 0.16);
+  border: none;
+  border-radius: 100px;
+  background-color: rgba(red, green, blue, alpha);
+}
+
+.calculator-grid-container > button:hover {
+  background-color: #668cff;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1/-1;
+  background-color: #ecf0f3;
+  box-shadow: inset -6px -6px 13px #668cff, 6px 6px 13px rgba(0, 0, 0, 0.16);
+  border-radius: 50%;
+  display: flex;
+  border: none;
+  border-radius: 32px;
+  align-items: flex-end;
+  flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 20px;
+  font-size: 40px;
+  height: 100px;
+  width: automatic;
+}
+
+.output .previous-operand {
+  color: #66d9ff;
+  font-size: large;
+}
+
+.output .current-operand {
+  color: #6666ff;
+  font-size: xx-large;
+}
