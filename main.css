@@ -2,23 +2,22 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: normal;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-;
+  font-weight: bold;
+  color: #17295f;
 }
 
 h1 {
-  text-size-adjust: 40px;
-  vertical-align: bottom;
+  text-align: center;
+  padding-top: 40px;
+  font-weight: bold;
+  text-size-adjust: 140px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
   text-shadow: -4px 4px #ff6666, -8px 8px #ffd966, -12px 12px #66ffb3,
     -16px 16px #668cff, -20px 20px #ff66d9;
-  font-size: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 50px;
 }
 
 body {
@@ -70,14 +69,10 @@ body {
   border: 5px solid rgba(255, 255, 255, 0.3);
   outline: none;
   background-color: #ecf0f3;
-  box-shadow: inset 6px 6px 13px #668cff, 6px 6px 13px rgba(0, 0, 0, 0.16);
+  box-shadow: inset -26px -26px 13px #668cff, 16px 16px 13px rgba(0, 0, 0, 0.16);
   border: none;
   border-radius: 100px;
   background-color: rgba(red, green, blue, alpha);
-}
-
-.calculator-grid-container > button:hover {
-  background-color: #668cff;
 }
 
 .span-two {
@@ -87,7 +82,7 @@ body {
 .output {
   grid-column: 1/-1;
   background-color: #ecf0f3;
-  box-shadow: inset -6px -6px 13px #668cff, 6px 6px 13px rgba(0, 0, 0, 0.16);
+  box-shadow: inset -16px -16px 13px #668cff, 16px 16px 13px rgba(0, 0, 0, 0.16);
   border-radius: 50%;
   display: flex;
   border: none;
@@ -97,17 +92,88 @@ body {
   word-wrap: break-word;
   word-break: break-all;
   padding: 20px;
-  font-size: 40px;
-  height: 100px;
+  font-size: 280px;
+  height: 110px;
   width: automatic;
 }
 
 .output .previous-operand {
-  color: #66d9ff;
-  font-size: large;
+  color: #17295f;
+  font-size: x-large;
 }
 
 .output .current-operand {
-  color: #6666ff;
-  font-size: xx-large;
+  color: #17295f;
+  font-size: xxx-large;
+}
+
+#AC:hover {
+  background-color: #ff8c66;
+}
+
+#DEL:hover {
+  background-color: #ffd966;
+}
+#divid:hover {
+  background-color: #ffff66;
+}
+
+#one:hover {
+  background-color: #b3ff66;
+}
+
+#two:hover {
+  background-color: #8cff66;
+}
+
+#three:hover {
+  background-color: #66ff8c;
+}
+
+#times:hover {
+  background-color: #66ffff;
+}
+
+#four:hover {
+  background-color: #66d9ff;
+}
+
+#five:hover {
+  background-color: #668cff;
+}
+
+#six:hover {
+  background-color: #6666ff;
+}
+
+#plus:hover {
+  background-color: #8c66ff;
+}
+
+#seven:hover {
+  background-color: #b366ff;
+}
+
+#eight:hover {
+  background-color: #cc66ff;
+}
+
+#nine:hover {
+  background-color: #d966ff;
+}
+
+#dash:hover {
+  background-color: #ff66d9;
+}
+
+#zero:hover {
+  background-color: #ff66b3;
+}
+
+#dot:hover {
+  background-color: #ff668c;
+}
+
+#equals:hover {
+  background-color: #ff6666;
 }
